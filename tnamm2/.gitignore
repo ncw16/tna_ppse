@@ -1,0 +1,7 @@
+#Ignore these folders
+
+.ipynb_checkpoints/
+Figures/
+MMCroppedLogos/
+data/
+gtruthDB.csv
