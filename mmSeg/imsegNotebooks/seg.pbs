@@ -1,0 +1,21 @@
+#PBS -l select=1:ncpus=4:mem=24gb:ngpus=1:gpu_type=RTX6000                                    
+#PBS -l walltime=23:01:00                                                                     
+                                                                                              
+echo "I am running"                                                                           
+                                                                                              
+module load anaconda3/personal                                                                
+source activate dh_segment                                                                    
+                                                                                              
+cd $PBS_O_WORKDIR                                                                             
+
+rm -r mark_model                                                                                              
+python train.py with mark_config.json
+
+echo "Testing"
+
+python test.py                                                                                
+                                                                                              
+mkdir $WORK/$PBS_JOBID                                                                        
+cp * $WORK/$PBS_JOBID                                                                         
+                                                                                              
+source deactivate dh_segment 

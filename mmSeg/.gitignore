@@ -13,4 +13,9 @@ MiscNotebooks/.ipynb_checkpoints
 imsegNotebooks/.ipynb_checkpoints/
 imsegNotebooks/pretrained_models/resnet_v1_50.ckpt
 imsegNotebooks/pretrained_models/vgg_16.ckpt
-imsegNotebooks/prize_papers
+imsegNotebooks/prize_papers/
+imsegNotebooks/bin_masks/
+imsegNotebooks/mark_model/
+imsegNotebooks/prob_masks/
+imsegNotebooks/processed_marks/
+imsegNotebooks/eval_notebooks/
