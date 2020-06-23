@@ -1,21 +1,14 @@
-# README #
-
-This README would normally document whatever steps are necessary to get your application up and running.
-
 ### What is this repository for? ###
 
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+This repo is for the UK National Archives Prize Paper Search Algorithm Project.
 
-### How do I get set up? ###
+The code for the image segmentation component is in mmSeg.
 
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
+tnamm2 has the code for the document retrieval component.
+
+### Set up ###
+
+The instructions for set up are in the README files in each folder
 
 ### Contribution guidelines ###
 
