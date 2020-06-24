@@ -9,14 +9,3 @@ tnamm2 has the code for the document retrieval component.
 ### Set up ###
 
 The instructions for set up are in the README files in each folder
-
-### Contribution guidelines ###
-
-* Writing tests
-* Code review
-* Other guidelines
-
-### Who do I talk to? ###
-
-* Repo owner or admin
-* Other community or team contact
