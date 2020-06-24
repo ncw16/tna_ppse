@@ -18,4 +18,4 @@ imsegNotebooks/bin_masks/
 imsegNotebooks/mark_model/
 imsegNotebooks/prob_masks/
 imsegNotebooks/processed_marks/
-imsegNotebooks/eval_notebooks/
+imsegNotebooks/eval_notebooks/.ipynb_checkpoints/

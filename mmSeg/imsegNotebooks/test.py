@@ -23,8 +23,8 @@ def post_process_probs_ornament(probability_maps):
     binary_maps = np.delete(binary_maps, 0, 2)
 
     # Ornament
-    binary_image = binarization.thresholding(probability_maps[:, :, 1], threshold=0.5)
-    binary_image = binarization.cleaning_binary(binary_image, kernel_size=7)
+    binary_image = binarization.thresholding(probability_maps[:, :, 1], threshold=0.75)
+    binary_image = binarization.cleaning_binary(binary_image, kernel_size=3)
     boxes = boxes_detection.find_boxes(binary_image, mode='rectangle', min_area=0.)
     bin_map = np.zeros_like(binary_maps)
     binary_maps[:, :, 0] = cv2.fillPoly(bin_map, boxes, (255, 0, 0))[:, :, 0]
