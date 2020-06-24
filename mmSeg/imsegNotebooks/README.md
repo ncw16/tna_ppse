@@ -47,26 +47,26 @@ The demo provided on installation of dhSegment has a good example
 
 "pretrained_models" has the scripts to download the weights for VGG16 and RESNET50
 
-To train run
-
+To train a model run
+```
 python train.py with <config.json>
-
+```
 where config.json is the configuration of training. There are two examples in this repo.
 
 If you are training multiple times you will need to export your model to a different directory. "mark_model" must not exist before you run train.py
 
 ## Trained model
 
- To use a model already trained on prize papers (50 training, 20 evaluation, 13 testing). Download the files and folders in this link and save in a "mark_model" folder
+To use a model already trained on prize papers (50 training, 20 evaluation, 13 testing). Download the files and folders in this link and save in a "mark_model" folder
 
- https://imperialcollegelondon.box.com/s/ef97mbrqa2z8353cgeeispao5ng9kjqn
+https://imperialcollegelondon.box.com/s/ef97mbrqa2z8353cgeeispao5ng9kjqn
 
 ## To run the segmentation algorithm
 
 run
-
+```
 python test.py
-
+```
 ## To run on the HPC
 
 There are pbs file examples
@@ -74,3 +74,11 @@ There are pbs file examples
 # Creating the mark database
 
 Once you have used dhSegment to segment initial regions, you use the create_final_db.ipynb to create the mark database. You must supply a name for the folder to store the database.
+
+# Evaluating performance
+
+Ensure that you have a complete output from the image segmentation. This should consist of mark images and a CSV file. You will also need a CSV of the ground truth.
+
+The notebooks in eval_notebooks can be used to evaluate the performance.
+
+When using them, make sure you provide the correct directories to your outputs and ground truth, as well as the original prize paper images.

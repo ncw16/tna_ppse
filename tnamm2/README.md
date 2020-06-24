@@ -33,7 +33,7 @@ and
 
 https://imperialcollegelondon.box.com/s/q9sstccgy3fhba3i8xe2u88epdxqt33m
 
-#### 5. Go to this link and download the ground truth csv and MMCroppedLogos folders into your working directory
+#### 5. Go to this link and download the ground truth csv and MMCroppedLogos folders into the current directory ("tnamm2/")
 
 https://imperialcollegelondon.box.com/s/2qckxk7201hfnl9knwkddgy69a5949jn
 
